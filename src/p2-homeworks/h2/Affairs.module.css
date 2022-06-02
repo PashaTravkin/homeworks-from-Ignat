@@ -1,3 +1,32 @@
-.someClass {
+.list{
+    margin: 20px;
+}
 
+.wrapper{
+    display: grid;
+    grid-template-areas: 'a b c';
+    grid-template-columns: 100px 70px 30px;
+    padding: 10px;
+
+}
+.item_1{
+    grid-area: a;
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.item_2{
+    grid-area: b;
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.item_3{
+    grid-area: c;
+}
+.button{
+    margin-right: 10px;
 }
