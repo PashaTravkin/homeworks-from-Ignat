@@ -1,7 +1,30 @@
 .someClass {
-
+    border: 5px solid blue;
+    box-shadow: 10px 5px 15px yellow;
 }
 
 .error {
-    border: 1px solid red;
+    border: 5px solid red;
+    box-shadow: 10px 5px 15px green;
+}
+
+.titleError {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.buttonEdd {
+    width: 50px;
+    height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #006600;
+    color: white;
+}
+
+.current{
+   color: #050505;
+    font-weight: bold;
+    font-size: 22px;
 }
