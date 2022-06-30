@@ -1,7 +1,11 @@
 .checkbox {
-
+    position: relative;
+    z-index: -1;
+    opacity: 50%;
+    background: #0074D9;
 }
 
 .spanClassName {
-
+color: #1cc709;
+    font-size: 20px;
 }

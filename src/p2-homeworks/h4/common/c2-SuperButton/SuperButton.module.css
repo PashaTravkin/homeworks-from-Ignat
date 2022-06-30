@@ -1,7 +1,159 @@
 .default {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 6px 9px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
 
+.default:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+{ /*.default {*/
+/*    text-decoration: none;*/
+/*    display: inline-block;*/
+/*    padding: 12px 40px;*/
+/*    margin: 10px 20px;*/
+/*    border-radius: 30px;*/
+/*    background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);*/
+/*    background-position: 100% 0;*/
+/*    background-size: 200% 200%;*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    font-size: 24px;*/
+/*    font-weight: 300;*/
+/*    color: white;*/
+/*    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);*/
+/*    transition: .5s;*/
+/*}*/
+/*.default:hover {*/
+/*    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);*/
+/*    background-position: 0 0;*/
+/*}*/
+}
+
+{ /*.default {*/
+/*    text-decoration: none;*/
+/*    color: white;*/
+/*    display: inline-block;*/
+/*    position: relative;*/
+/*    padding: 15px 30px;*/
+/*    border: 1px solid;*/
+/*    border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);*/
+/*    border-image-slice: 1;*/
+/*    margin: 10px 20px;*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    text-transform: uppercase;*/
+/*    overflow: hidden;*/
+/*    letter-spacing: 2px;*/
+/*    transition: .8s cubic-bezier(.165, .84, .44, 1);*/
+/*}*/
+/*.default:before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    height: 0;*/
+/*    width: 100%;*/
+/*    z-index: -1;*/
+/*    color: white;*/
+/*    background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);*/
+/*    transition: .8s cubic-bezier(.165, .84, .44, 1);*/
+/*}*/
+/*.default:hover {*/
+/*    background: rgba(255, 255, 255, 0);*/
+/*}*/
+/*.default:hover:before {*/
+/*    bottom: 0%;*/
+/*    top: auto;*/
+/*    height: 100%;*/
+/*}*/
+}
+
+{ /*.default {*/
+/*    text-decoration: none;*/
+/*    display: inline-block;*/
+/*    padding: 15px 30px;*/
+/*    margin: 10px 20px;*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 0 0 40px 40px #F137A6 inset, 0 0 0 0 #F137A6;*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    font-weight: bold;*/
+/*    letter-spacing: 2px;*/
+/*    color: white;*/
+/*    transition: .15s ease-in-out;*/
+/*}*/
+/*.default:hover {*/
+/*    box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;*/
+/*    color: #F137A6;*/
+/*}*/
+}
+
+{ /*.default {*/
+/*    text-decoration: none;*/
+/*    display: inline-block;*/
+/*    padding: 10px 30px;*/
+/*    margin: 10px 20px;*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*    border: 2px solid #fe6637;*/
+/*    border-radius: 8px;*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    color: #fe6637;*/
+/*    transition: .2s ease-in-out;*/
+/*}*/
+/*.default:before {*/
+/*    content: "";*/
+/*    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));*/
+/*    height: 50px;*/
+/*    width: 50px;*/
+/*    position: absolute;*/
+/*    top: -8px;*/
+/*    left: -75px;*/
+/*    transform: skewX(-45deg);*/
+/*}*/
+/*.default:hover {*/
+/*    background: #fe6637;*/
+/*    color: #fff;*/
+/*}*/
+/*.default:hover:before {*/
+/*    left: 150px;*/
+/*    transition: .5s ease-in-out;*/
+/*}*/
+}
+
+.default:disabled{
+    background: #7f7f7f;
 }
 
 .red {
-    background: red;
+        text-decoration: none;
+        display: inline-block;
+        padding: 7px 25px;
+        margin: 10px 20px;
+        border-radius: 15px;
+        background-image: linear-gradient(45deg, #a3084a 0%, #d31414 50%, #540303 100%);
+        background-position: 100% 0;
+        background-size: 200% 200%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        color: white;
+        box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+        transition: .5s;
+    }
+    .red:hover {
+        box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+        background-position: 0 0;
 }
