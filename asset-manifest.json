@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/git@github.com:PashaTravkin/homeworks-from-Ignat.git/static/css/main.f64d80c0.css",
+    "main.js": "/git@github.com:PashaTravkin/homeworks-from-Ignat.git/static/js/main.43fba2d8.js",
+    "index.html": "/git@github.com:PashaTravkin/homeworks-from-Ignat.git/index.html",
+    "main.f64d80c0.css.map": "/git@github.com:PashaTravkin/homeworks-from-Ignat.git/static/css/main.f64d80c0.css.map",
+    "main.43fba2d8.js.map": "/git@github.com:PashaTravkin/homeworks-from-Ignat.git/static/js/main.43fba2d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f64d80c0.css",
+    "static/js/main.43fba2d8.js"
+  ]
+}
