@@ -23,6 +23,10 @@
     color: white;
 }
 
+.buttonEdd:disabled{
+    background: rgba(107, 162, 224, 0.26);
+}
+
 .current{
    color: #050505;
     font-weight: bold;

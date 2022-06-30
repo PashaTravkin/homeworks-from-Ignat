@@ -4,7 +4,7 @@ import {UserType} from "./HW3";
 
 type GreetingContainerPropsType = {
     users: UserType[] // need to fix any
-    addUserCallback: (value: string) => void // need to fix any
+    addUserCallback: (name: string) => void // need to fix any
 }
 
 // более простой и понятный для новичков
@@ -15,7 +15,6 @@ type GreetingContainerPropsType = {
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
     const [name, setName] = useState<string>('') // need to fix any
     const [error, setError] = useState<string>('') // need to fix any
-    const [disabled, setDisabled] = useState<boolean>(false)
 
     const addUser = () => {
         addUserCallback(name)
@@ -24,23 +23,19 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     }
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
-        let meaning = e.currentTarget.value.trim()
-        if (meaning) {
-            setName(meaning)
-            setError('')
-            setDisabled(false)
+        let trimmedName = e.currentTarget.value.trim()
+        if (trimmedName) {
+            setName(trimmedName)
+            error && setError('')
         } else {
+            name && setName('')
             setError('Name is required!')
-            setDisabled(true)
         }     // need to fix
     }
 
     const enterAdd = (e: KeyboardEvent<HTMLInputElement>) => {
-        if (name.trim() !== '') {
-            if (e.key === 'Enter') {
-                addUser()
-                setName(' ')
-            }
+        if (e.key === 'Enter' && name) {
+            addUser()
         }
     }
 
@@ -54,7 +49,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             error={error}
             totalUsers={totalUsers}
             setName={setName}
-            disabled={disabled}
             enterAdd={enterAdd}
         />
     )
