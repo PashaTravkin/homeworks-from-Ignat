@@ -1,11 +1,10 @@
 import React from 'react'
+import HW7 from "../../h7/HW7";
 
 function Junior() {
     return (
         <div>
-           <div>There is lessons from 6HW </div>
-            {/*<HW6/>*/}
-
+            <HW7/>
         </div>
     )
 }

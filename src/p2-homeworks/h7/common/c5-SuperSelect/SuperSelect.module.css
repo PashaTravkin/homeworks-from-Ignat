@@ -1,0 +1,14 @@
+.superSelect{
+    padding: 5px;
+    appearance: none;/*вытирает все стили у select!!!!!!!!!*/
+    background-color: #3e8e41;
+    border: 1px solid  #3e8e41;
+    border-radius: 10px;
+    width: 55px;
+    cursor: pointer;
+}
+
+.superSelect:focus{
+    outline: none;
+    border: 1px solid red;
+}
