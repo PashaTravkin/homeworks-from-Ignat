@@ -33,6 +33,7 @@ const SuperRange: React.FC<SuperRangePropsType> = (
                 type={'range'}
                 onChange={onChangeCallback}
                 className={finalRangeClassName}
+                value={restProps.value}
 
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
             />
