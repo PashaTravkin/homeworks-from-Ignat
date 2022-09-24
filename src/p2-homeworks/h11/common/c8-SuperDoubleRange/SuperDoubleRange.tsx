@@ -1,24 +1,55 @@
-import React from 'react'
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Slider from '@mui/material/Slider';
 
-type SuperDoubleRangePropsType = {
-    onChangeRange?: (value: [number, number]) => void
-    value?: [number, number]
-    // min, max, step, disable, ...
+function valuetext(value: number) {
+    return `${value}`;
 }
 
-const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
-    {
-        onChangeRange, value,
-        // min, max, step, disable, ...
-    }
-) => {
-    // сделать самому, можно подключать библиотеки
+export function RangeSlider() {
+    const [value, setValue] = React.useState<number[]>([10, 50]);
+
+    const handleChange = (event: Event, newValue: number | number[]) => {
+        setValue(newValue as number[]);
+    };
+
+    const marks = [
+        {
+            value: 0,
+            label: value[0],
+        },
+        {
+            value: 100,
+            label: value[1],
+        }]
+
+
 
     return (
-        <>
-            DoubleRange
-        </>
-    )
-}
+        <Box sx={{ width: 900, marginLeft:'20px', fontWeight:'bold'}}>
+            <Slider
+                min={0}
+                max={100}
+                getAriaLabel={() => 'Temperature range'}
+                value={value}
+                onChange={handleChange}
+                valueLabelDisplay="auto"
+                getAriaValueText={valuetext}
+                color="secondary"
+                marks={marks}
+            />
 
-export default SuperDoubleRange
+            <Slider
+                min={0}
+                max={100}
+                getAriaLabel={() => 'Temperature range'}
+                value={value}
+                onChange={handleChange}
+                valueLabelDisplay="auto"
+                getAriaValueText={valuetext}
+                color="secondary"
+                marks={marks}
+            />
+        </Box>
+    );
+}
