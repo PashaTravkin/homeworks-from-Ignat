@@ -38,7 +38,6 @@ export function RangeSlider() {
                 color="secondary"
                 marks={marks}
             />
-
             <Slider
                 min={0}
                 max={100}
